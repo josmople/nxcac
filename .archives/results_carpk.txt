@@ -1,0 +1,16 @@
+bmnet (vanilla)
+mae 19.752166813495112
+mse 24.450099694784914
+
+nxbmnet (with counter), neg_mining_v1 
+mae 9.768843984811655
+mse 12.502672554321267
+
+
+nxbmnet (with counter), neg_mining_v2
+mae 22.64958503615103
+mse 26.198708702151677
+
+nxbmnet, kernonly
+mae 18.829253968589967
+mse 23.338974398430004

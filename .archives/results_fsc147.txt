@@ -1,0 +1,31 @@
+famnet (vanilla), no adjustment
+mae 42.96990757309088
+mse 149.5841839579868
+
+famnet (vanilla), eval, no adjustment
+mae 49.72367580477931
+mse 110.0382287978103
+
+famnet (vanilla), eval, with adjustment, adj.steps=10
+mae 39.238793624749704
+mse 120.52216694391022
+
+famnet (vanilla), eval, with adjustment, adj.steps=100
+mae 35.09576711774874
+mse 122.24837950089926
+
+bmnet (vanilla)
+mae 14.575083793912615
+mse 91.99483463188986
+
+nxbmnet (with counter), neg_mining_v1 
+mae 15.709467456320755
+mse 96.06503512709075
+
+nxbmnet (with counter), neg_mining_v2
+mae 18.400364489915994
+mse 99.37235912536228
+
+nxbmnet, kernonly
+mae 15.231322000808074
+mse 94.99254454973052

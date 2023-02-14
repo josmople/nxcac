@@ -1,0 +1,75 @@
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\000.pth
+mae=15.26082737746359
+mse=93.32501899102611
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\001.pth
+mae=15.36909560756523
+mse=93.4311760840386
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\002.pth
+mae=15.384568930473648
+mse=93.7073020581705
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\003.pth
+mae=15.426843150623705
+mse=94.00611813777996
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\004.pth
+mae=15.430697426595607
+mse=94.33685021495818
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\005.pth
+mae=15.443348854262622
+mse=94.6277540942795
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\006.pth
+mae=15.424204223353465
+mse=94.6717025123162
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\007.pth
+mae=15.403690162376195
+mse=94.59572335736036
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\008.pth
+mae=15.391538290127096
+mse=94.53581934446458
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\009.pth
+mae=15.358181097727863
+mse=94.4137850097803
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\010.pth
+mae=15.317190890643685
+mse=94.27484267812963
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\011.pth
+mae=15.27559294707301
+mse=94.15496765343693
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\012.pth
+mae=15.237182978036408
+mse=94.05110902765246
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\013.pth
+mae=15.205542429440877
+mse=93.98415291945578
+
+
+D:/Josm/Research/BMNetNegX/logs/2023-02-12 20-29-33.412866/adjuster\014.pth
+mae=15.173112428462138
+mse=93.90823053266914
+
+
