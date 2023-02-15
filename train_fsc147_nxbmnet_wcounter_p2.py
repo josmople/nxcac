@@ -14,13 +14,17 @@ device = "cuda"
 dataloader = bmnet.data.build_dataloader("D:\Datasets\FSC147_384_V2", "train", batch_size=1)
 model = bmnet.model.build_pretrained_model().to(device)
 
-model = nxbmnet.NxBmnet_PNCtx_NegV2(model, freeze_base=True)
-model.adjuster.load_state_dict(torch.load("D:/Josm/Research/BMNetNegX/.logs/04 - kernonly (p2)/adjuster/095.pth"))
+model = nxbmnet.NxBmnet_PNCtx(model, freeze_base=True)
+model.base.counter = bmnet.model.get_counter(counter="density_x16", counter_dim=257)
 model.to(device)
 
-optim = torch.optim.Adam(model.adjuster.parameters(), lr=1e-6)
+model.adjuster.load_state_dict(torch.load("D:/Josm/Research/BMNetNegX/.logs/02 - trainable counter/adjuster/072.pth"))
+model.base.counter.load_state_dict(torch.load("D:/Josm/Research/BMNetNegX/.logs/02 - trainable counter/counter/072.pth"))
 
-P = U.dirp.Dirpath(".logs", "04 - kernonly (p3)")
+
+optim = torch.optim.Adam(list(model.adjuster.parameters()) + list(model.base.counter.parameters()), lr=1e-7)
+
+P = U.dirp.Dirpath(".logs", "02 - trainable counter (p2)")
 
 writer = U.log.tb_writer(P())
 
@@ -60,9 +64,10 @@ for epoch in range(100):
     final_mse = (mse / tot) ** 0.5
 
     torch.save(model.adjuster.state_dict(), P("adjuster", f"{epoch:03}.pth"))
+    torch.save(model.base.counter.state_dict(), P("counter", f"{epoch:03}.pth"))
 
-    print("mae", final_mae)
-    print("mse", final_mse)
+    print("mse", final_mae)
+    print("mae", final_mse)
 
     writer.add_scalar("mae", final_mae, epoch)
     writer.add_scalar("mse", final_mse, epoch)
